@@ -6,6 +6,9 @@
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
     <version>0.1.0</version>
+	<scm>
+		<developerConnection>scm:git:https://github.com/avinash514/Springboot-MVC.git</developerConnection>
+	</scm>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
