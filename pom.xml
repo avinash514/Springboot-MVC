@@ -62,6 +62,26 @@
                 <autoversionsubmodules>true</autoversionsubmodules>
             </configuration>
         </plugin>
+		<plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.9.1</version>
+        <executions>
+          <execution>
+            <id>regex-property</id>
+            <goals>
+              <goal>regex-property</goal>
+            </goals>
+            <configuration>
+             <!-- <name>human.version</name> -->
+              <value>$\{project.version}</value>
+              <regex>-SNAPSHOT</regex>
+              <replacement> pre-release development version</replacement>
+              <failIfNoMatch>false</failIfNoMatch>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
 		 <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
