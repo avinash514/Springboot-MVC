@@ -73,7 +73,7 @@
               <goal>regex-property</goal>
             </goals>
             <configuration>
-             <!-- <name>human.version</name> -->
+             <name>human.version</name>
               <value>$\{project.version}</value>
               <regex>-SNAPSHOT</regex>
               <replacement> pre-release development version</replacement>
