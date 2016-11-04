@@ -5,7 +5,7 @@
 
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
-    <version>${human.version}</version>
+    <version>${project.version}</version>
 	<scm>
 		<developerConnection>scm:git:https://github.com/avinash514/Springboot-MVC.git</developerConnection>
 	</scm>
